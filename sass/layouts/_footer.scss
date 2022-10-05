@@ -6,7 +6,15 @@
 
 .footer-container-general {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: start;
+    }
 }
 
 .footer-box-navigation {
@@ -42,6 +50,11 @@
     line-height: calc(31 / 26);
 }
 
+.adress {
+    margin-top: 20px;
+    font-style: normal;
+}
+
 .footer-list-contacts {
     list-style: none;
     margin: 0;
@@ -50,7 +63,14 @@
 }
 
 .footer-list-contacts__item {
-    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+
+    margin-top: 9px;
+
+    &--first {
+      margin-top: 0;
+    }
 }
 
 .footer-list-contacts__adress {
