@@ -1,5 +1,14 @@
 /*our work*/
 
+.our-work__section {
+    display: none;
+    padding-top: 0;
+  
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+}
+
 .our-work__title {
     font-family: "Roboto";
     font-style: normal;
